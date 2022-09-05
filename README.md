@@ -1,4 +1,4 @@
-# Project 1 A Naive Human-Machine Interface (HMI)
+# Project 1: A Naive Human-Machine Interface (HMI)
 
 ## Background
 A Human-Machine Interface (HMI) is widely used in indutrial robots and other industrial processes. It is a very useful tool for a human operator to monitor a device's status, visualize data and carry out commands. In this project, we will build a basic HMI using some low-cost components.
