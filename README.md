@@ -23,8 +23,7 @@ Refer to the following steps to code:
 2. (20%) When **PAUSE MODE** is activated: `GREEN` LED fades in and fades out at frequency of 1 Hz. Press the button to ***immediately*** switch to the **WORK MODE**.
 3. (20%) When **WORK MODE** is activated: `GREEN` LED stays constantly on. Press the button to switch back to the **PAUSE MODE**.
 4. (20%) Time **WORK MODE**. If the accumulated **WORK MODE** time exceeds 45 seconds, turn on `YELLOW` LED. If accumulated **WORK MODE** time over 55 seconds, blink `RED` LED at frequency of 10 Hz.
-5. then turn all the LEDs off and shutdown the system. 
-6. (15%) Termination: turn off everything (_hint: break the endless loop_) if `RED` LED blinked 5 seconds, or **press and hold**_ the button for 3 seconds. 
+5. (15%) Termination: turn off everything (_hint: break the endless loop_) if `RED` LED blinked 5 seconds, or **press and hold**_ the button for 3 seconds. 
 
 **NOTE**: 
 - Mode switching is NOT a one-time function. Make sure you can switch between the modes back and forth.
