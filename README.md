@@ -7,8 +7,8 @@ A Human-Machine Interface (HMI) is widely used in robotic applications (See Room
 
 ## Requirements:
 1. Imagine we are developing an HMI for a house cleaning robot (e.g. Roomba). Code a Raspberry Pi Pico to: 
-  - Indicate the robot's status using the LEDs.
-  - Switch the robot's working modes using the button.
+    - Indicate the robot's status using the LEDs.
+    - Switch the robot's working modes using the button.
 2. Document this project.
 
 ### (85%) Coding
