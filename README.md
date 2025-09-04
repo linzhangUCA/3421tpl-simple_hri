@@ -28,24 +28,26 @@ Human-Robot Interface (HRI) is widely used allowing humans to easily interact wi
    - (4%) Blink all LEDs with frequency of 5 Hz, lasting 2 seconds.
    - (1%) The robot enters `PAUSE MODE` after this step.
 2. When `PAUSE MODE` is activated:
-   - (10%)`GREEN` LED fades in and fades out at frequency of 1 Hz (equally allocate fade-in and fade-out time).
-   - (10%)Press the button to **immediately** switch to the `WORK MODE`.
+   - (10%) `GREEN` LED fades in and fades out at frequency of 1 Hz (equally allocate fade-in and fade-out time).
+   - (10%) Press the button to **immediately** switch to the `WORK MODE`.
 3. When `WORK MODE` is activated:
    - (4%) `GREEN` LED stays constantly on.
    - (6%) Press the button to **immediately** switch to the **PAUSE MODE**.
 4. Time `WORK MODE`.
    - (15%) If the accumulated `WORK MODE` time exceeds 45 seconds, substitute `GREEN` LED with **`BLUE`** LED in both modes (low-battery simulation).
    - (5%) If accumulated `WORK MODE` time over 55 seconds, blink `RED` LED (`BLUE` LED keep working) at frequency of 10 Hz.
-5. (10%) Termination:
-   - **Despite the mode**, trigger a [hard reset](https://docs.micropython.org/en/latest/wipy/tutorial/reset.html#reset-and-boot-modes) if `RED` LED blinked 5 seconds
-   - **Despite the mode**, trigger a [hard reset](https://docs.micropython.org/en/latest/wipy/tutorial/reset.html#reset-and-boot-modes) if the button is **pressed and held** for 3 seconds. 
+5. (10%) Termination. **Despite the mode**, trigger a [hard reset](https://docs.micropython.org/en/latest/wipy/tutorial/reset.html#reset-and-boot-modes) if:
+   - `RED` LED blinked 5 seconds
+   - button is **pressed and held** for 3 seconds. 
+
+> [!IMPORTANT]
+> - Mode switching is NOT a one-time function.
+> - After 55 seconds of `WORK`, the `BLUE` LED and the `RED` LED are suppose to be functional together in both modes.
 
 > [!TIP]
-> - `print()` function and Python Shell are awesome.
-
-> [!NOTE]
-> - Mode switching is NOT a one-time function. Make sure you can switch between the modes back and forth.
-> - The `BLUE` LED and the `RED` LED are suppose to functional in both **WORK MODE** and **PAUSE MODE**
+> - Break tasks down into small pieces (the smaller the better). You may need write a handful of unit test scripts.
+> - `print()` function and Python Shell are handy tools.
+> - [global variables](https://realpython.com/python-use-global-variable-in-function/) are useful for interrup handling functions.
 
 ### 3 (20%) Documentation
 **It is important to get an engineering project well documented.** 
