@@ -49,7 +49,7 @@ Human-Robot Interface (HRI) is widely used allowing humans to easily interact wi
 > - `print()` function and Python Shell are handy tools.
 > - [global variables](https://realpython.com/python-use-global-variable-in-function/) are useful for interrup handling functions.
 
-### 3 (20%) Documentation
+### 3 (20%) Academic Writing
 **It is important to get an engineering project well documented.** 
 Complete the [Documentation](#documentation-student-work-) section below. 
 1. Illustrate circuit design
