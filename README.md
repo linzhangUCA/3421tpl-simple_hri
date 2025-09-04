@@ -1,7 +1,7 @@
-# Project 1: A Naive Human-Machine Interface (HMI)
+# Project 1: A Simple Human-Robot Interface (HRI)
 
 ## Background
-A Human-Machine Interface (HMI) is widely used in robotic applications (See Roomba's HMI below). It allows humans to easily interact with machines. An HMI usually provides information about a machine's status, as well as executes command from human operators. In this project, we will build a basic HMI using LEDs and a tactile switch button.
+Human-Robot Interface (HRI) is widely used allowing humans to easily interact with robots (see an example of Roomba's HRI below). The fundamentals of an HRI include displaying a robot's status, and executing commands from human operators. In this project, we will build a basic HRI for our robots using LED(s) and a tactile switch button.
 
 ![roomba_hmi](https://miro.medium.com/v2/resize:fit:640/format:webp/1*nLjM3CHVIxvbTAc3EuUpvg.gif)
 
