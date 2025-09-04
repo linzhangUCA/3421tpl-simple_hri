@@ -14,7 +14,6 @@ Human-Robot Interface (HRI) is widely used allowing humans to easily interact wi
 > [!TIP]
 > - Search online if any concepts are confused.
 > - Scavenge in classroom if any parts are needed.
-> - Debouncing and RGB LED are optional.
 
 > [!IMPORTANT]
 > Redeem the credits by uploading images and display them in [Documentation](#circuit-design) below.
@@ -37,7 +36,9 @@ Human-Robot Interface (HRI) is widely used allowing humans to easily interact wi
 4. Time `WORK MODE`.
    - (15%) If the accumulated `WORK MODE` time exceeds 45 seconds, substitute `GREEN` LED with **`BLUE`** LED in both modes (low-battery simulation).
    - (5%) If accumulated `WORK MODE` time over 55 seconds, blink `RED` LED (`BLUE` LED keep working) at frequency of 10 Hz.
-5. (10%) Termination: **despite the mode**, trigger a [hard reset](https://docs.micropython.org/en/latest/wipy/tutorial/reset.html#reset-and-boot-modes) if `RED` LED blinked 5 seconds, or **press and hold**_ the button for 3 seconds . 
+5. (10%) Termination:
+   - **Despite the mode**, trigger a [hard reset](https://docs.micropython.org/en/latest/wipy/tutorial/reset.html#reset-and-boot-modes) if `RED` LED blinked 5 seconds
+   - **Despite the mode**, trigger a [hard reset](https://docs.micropython.org/en/latest/wipy/tutorial/reset.html#reset-and-boot-modes) if the button is **pressed and held** for 3 seconds. 
 
 > [!TIP]
 > - `print()` function and Python Shell are awesome.
@@ -50,11 +51,11 @@ Human-Robot Interface (HRI) is widely used allowing humans to easily interact wi
 **It is important to get an engineering project well documented.** 
 Complete the [Documentation](#documentation-student-work-) section below. 
 1. Illustrate circuit design
-   - (8%) Upload a circuit sketch (breadboard is optional) to this repository  and display it in the [Circuit Diagram](#circuit-diagram) section.
-   - (8%) Upload a picture to this repository to illustrate your physical setup. Display it in the [Wiring Picture](#wiring-picture) section.
-2. (4%) Briefly (within 80 words) propose a nice-to-have feature for this HRI with consideration of **safety**.
-   - You can add/remove LEDs and buttons, but no other items are allowed.
-   - Briefly state why this feature will bring more safety to the hardware/user/public/environment/economy/etc..
+   - (7%) Upload a circuit sketch (breadboard is optional) to this repository  and display it in the [Circuit Diagram](#circuit-diagram) section.
+   - (7%) Upload a picture to this repository to illustrate your physical setup. Display it in the [Wiring Picture](#wiring-picture) section.
+2. (4%) Briefly explain how your debouncing circuit works using **math** language.   
+3. (2%) Briefly (within 80 words) propose a nice-to-have feature for this HRI with consideration of **safety**.
+   State why this feature will the robot safer to the hardware/user/public/environment/etc..
 
 > [!TIP]
 > Please refer to [Github formatting guide](https://docs.github.com/en/get-started/writing-on-github).
@@ -72,6 +73,9 @@ Complete the [Documentation](#documentation-student-work-) section below.
 > Display an actual picture of your physical circuit below.
 
 ![picture name](picture_link)
+
+#### Debouncing Circuit Explained
+> Write your analysis down below in **math** language. 
 
 ### Safety Feature in Future
 > Write your considerations/solutions down below.
