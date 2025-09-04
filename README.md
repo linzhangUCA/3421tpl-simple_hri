@@ -13,7 +13,7 @@ Human-Robot Interface (HRI) is widely used allowing humans to easily interact wi
 - (2%) Use a **common cathode** RGB LED.
 > [!TIP]
 > - Search online if any concepts are confused.
-> - Scavenge in classroom if any parts are needed.
+> - Scavenge in robotics lab or ask Dr. Zhang's help if any parts are needed.
 
 > [!IMPORTANT]
 > Redeem the credits by uploading images and display them in [Documentation](#circuit-design) below.
