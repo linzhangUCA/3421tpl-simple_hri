@@ -19,7 +19,7 @@ Human-Robot Interface (HRI) is widely used allowing humans to easily interact wi
 > [!IMPORTANT]
 > Redeem the credits by uploading images and display them in [Documentation](#circuit-design) below.
 
-### 2 (65%) Coding
+### 2 (75%) Coding
 - Program the Raspberry Pi Pico to: 
     - Encode robot's status into colors (`GREEN`, `BLUE`, `RED`) using LEDs .
     - Switch robot's behavior between **WORK MODE** and **PAUSE MODE** using a button.
@@ -46,16 +46,19 @@ Human-Robot Interface (HRI) is widely used allowing humans to easily interact wi
 > - Mode switching is NOT a one-time function. Make sure you can switch between the modes back and forth.
 > - The `BLUE` LED and the `RED` LED are suppose to functional in both **WORK MODE** and **PAUSE MODE**
 
-### 3 (15%) Documentation
-**It is important to guide other people with a good documents.** Complete the following sections in this README. Please refer to [Github formatting guide](https://docs.github.com/en/get-started/writing-on-github) to get familiar with Markdown formatting.
-1. (5%) Hardware Table: list the names, descriptions and quantities of physical components used in this project.
-2. (5%) Wiring Diagram: attach a drawing to illustrate components connection.
-3. (5%) Summary: a few words to wrap up this project.
+### 3 (10%) Documentation
+**It is important to get an engineering project well documented.** 
+Complete the section below in this README. 
+
+> [!TIP]
+> Please refer to [Github formatting guide](https://docs.github.com/en/get-started/writing-on-github).
+
 
 ## Documentation (Student Work) 👇
 
 ### Circuit Design
+
 ![image name](link)
 
-## Usage Instructions
-> Use bulleted or indexed steps to instruct users of your product.
+### Broader Impact
+> Write your considerations/solutions down below.
