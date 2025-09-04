@@ -56,7 +56,7 @@ Complete the [Documentation](#documentation-student-work-) section below.
    - (7%) Upload a [wiring diagram](https://projects-static.raspberrypi.org/projects/getting-started-with-the-pico/76943ea08b51e5f59937fcc4cec1d531fc013b6c/en/images/single_LED.png) or a circuit schematic (breadboard is optional) to this repository  and display it in the [Circuit Diagram](#circuit-diagram) section.
    - (7%) Upload a picture to this repository to illustrate your physical setup. Display it in the [Wiring Picture](#wiring-picture) section.
 2. (4%) Briefly explain how your debouncing circuit works using **math** language.   
-3. (2%) (Within 80 words) Briefly propose a nice-to-have feature for an HRI with consideration of **safety**.
+3. (2%) (Within 80 words) Briefly propose a nice-to-have feature for an **HRI** with consideration of **safety**.
    State why this feature will make the robot safer to the hardware/user/public/environment/etc..
 
 > [!TIP]
