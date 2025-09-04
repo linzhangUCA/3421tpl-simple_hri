@@ -33,7 +33,7 @@ Human-Robot Interface (HRI) is widely used allowing humans to easily interact wi
    - (10%)Press the button to **immediately** switch to the `WORK MODE`.
 3. When `WORK MODE` is activated:
    - (4%) `GREEN` LED stays constantly on.
-   - (6%) Press the button to ***immediately*** switch to the **PAUSE MODE**.
+   - (6%) Press the button to **immediately** switch to the **PAUSE MODE**.
 4. Time `WORK MODE`.
    - (15%) If the accumulated `WORK MODE` time exceeds 45 seconds, substitute `GREEN` LED with **`BLUE`** LED in both modes (low-battery simulation).
    - (5%) If accumulated `WORK MODE` time over 55 seconds, blink `RED` LED (`BLUE` LED keep working) at frequency of 10 Hz.
