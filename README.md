@@ -33,7 +33,7 @@ Human-Robot Interface (HRI) is widely used allowing humans to easily interact wi
    - (10%)Press the button to ***immediately*** switch to the **WORK MODE**.
 3. When **WORK MODE** is activated:
    - (4%) `GREEN` LED stays constantly on.
-   - (6%)Press the button to ***immediately*** switch to the **PAUSE MODE**.
+   - (6%) Press the button to ***immediately*** switch to the **PAUSE MODE**.
 4. Time **WORK MODE**.
    - (15%) If the accumulated **WORK MODE** time exceeds 45 seconds, substitute `GREEN` LED with **`BLUE`** LED to simulate a low battery status.
    - (5%) If accumulated **WORK MODE** time over 55 seconds, blink `RED` LED (`BLUE` LED keep working) at frequency of 10 Hz.
@@ -48,7 +48,13 @@ Human-Robot Interface (HRI) is widely used allowing humans to easily interact wi
 
 ### 3 (10%) Documentation
 **It is important to get an engineering project well documented.** 
-Complete the section below in this README. 
+Complete the [Documentation](#documentation-student-work-) section below. 
+1. Illustrate circuit design
+   - (4%) Upload a circuit sketch (breadboard is optional) to this repository  and display it in the [Circuit Diagram](#circuit-diagram) section.
+   - (4%) Upload a picture to this repository to illustrate your physical setup. Display it in the [Wiring Picture](#wiring-picture) section.
+2. (2%) Briefly (within 80 words) propose a nice-to-have feature for this HRI with consideration of **safety**.
+   - You can add/remove LEDs and buttons, but no other items are allowed.
+   - Briefly state why this feature will bring more safety to the hardware/user/public/environment/economy/etc..
 
 > [!TIP]
 > Please refer to [Github formatting guide](https://docs.github.com/en/get-started/writing-on-github).
@@ -57,8 +63,15 @@ Complete the section below in this README.
 ## Documentation (Student Work) 👇
 
 ### Circuit Design
+#### Circuit Diagram
+> Display ciruit diagram below
 
-![image name](link)
+![diagram name](diagram_link)
 
-### Broader Impact
+#### Wiring Picture
+> Display an actual picture of your physical circuit below.
+
+![picture name](picture_link)
+
+### Safety Feature in Future
 > Write your considerations/solutions down below.
