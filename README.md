@@ -1,17 +1,27 @@
 # Project 1: A Simple Human-Robot Interface (HRI)
 
 ## Background
-Human-Robot Interface (HRI) is widely used allowing humans to easily interact with robots (see an example of Roomba's HRI below). The fundamentals of an HRI include displaying a robot's status, and executing commands from human operators. In this project, we will build a basic HRI for our robots using LED(s) and a tactile switch button.
+Human-Robot Interface (HRI) is widely used allowing humans to easily interact with robots (see an example of Roomba's HRI below). The fundamentals of an HRI include **displaying** a robot's status, and **executing** commands from human operators. In this project, we will build a basic HRI for our robots using LED(s) and a tactile switch button.
 
-![roomba_hmi](https://miro.medium.com/v2/resize:fit:640/format:webp/1*nLjM3CHVIxvbTAc3EuUpvg.gif)
+![roomba_hri](https://miro.medium.com/v2/resize:fit:640/format:webp/1*nLjM3CHVIxvbTAc3EuUpvg.gif)
 
 ## Requirements:
-1. Imagine we are developing an HMI for a house cleaning robot (e.g. Roomba). Code a Raspberry Pi Pico to: 
-    - Indicate the robot's status using the LEDs.
-    - Switch the robot's working modes using the button.
-2. Document this project.
 
-### (85%) Coding
+### 1 (15%) Circuit Design
+- (10%) Wire up the Raspberry Pi Pico, LEDs and the button to deliver a functional circuit for the HRI.
+- (3%) Make a debouncing circuit for the button.
+- (2%) Use a **common cathode** RGB LED.
+> [!TIP]
+> - Search online if any concepts are confused.
+> - Scavenge in classroom if any parts are needed.
+
+> [!IMPORTANT]
+> Redeem the credits by uploading images and display them in [Documentation](#circuit-design) below.
+
+### (85%) 2 Coding
+Program the Raspberry Pi Pico to: 
+    - Indicate the robot's status using LEDs.
+    - Switch the robot's working modes using the button.
 > Upload your script to this repository.
 
 - The robot has 2 modes: **WORK MODE, PAUSE MODE**.
@@ -36,13 +46,9 @@ Refer to the following steps to code:
 2. (5%) Wiring Diagram: attach a drawing to illustrate components connection.
 3. (5%) Summary: a few words to wrap up this project.
 
-## Hardware Table
-| Name | Description | Quantity |
-| :--- | :---        |  :---:   |
-|      |             |          |
-|      |             |          |
+## Documentation (Student Work) 👇
 
-## Wiring Diagram
+### Circuit Design
 ![image name](link)
 
 ## Usage Instructions
