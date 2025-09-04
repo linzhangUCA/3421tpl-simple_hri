@@ -19,24 +19,24 @@ Human-Robot Interface (HRI) is widely used allowing humans to easily interact wi
 > [!IMPORTANT]
 > Redeem the credits by uploading images and display them in [Documentation](#circuit-design) below.
 
-### 2 (75%) Coding
+### 2 (65%) Coding
 - Program the Raspberry Pi Pico to: 
-    - Encode robot's status into colors (`GREEN`, `BLUE`, `RED`) using LEDs .
-    - Switch robot's behavior between **WORK MODE** and **PAUSE MODE** using a button.
+    - Encode robot's status into colors (`RED`, `GREEN`, `BLUE`) using LEDs .
+    - Switch robot's behavior between `WORK MODE` and `PAUSE MODE` using a button.
 
 - Tasks:
-1. Initialization (System Check): blink all the LEDs at the same time if the button's GPIO pin is receiving correct default signal level (`0` for `PULL_DOWN`, `1` for `PULL_UP`).
-   - (4%) Blink LEDs with frequency of 5 Hz, lasting 2 seconds.
-   - (1%) The robot enters **PAUSE MODE** after this step.
-2. When **PAUSE MODE** is activated:
+1. Initialization (System Check): blink all the LEDs at the same time if the button's GPIO pin is receiving correct default signal (`0` for `PULL_DOWN`, `1` for `PULL_UP`).
+   - (4%) Blink all LEDs with frequency of 5 Hz, lasting 2 seconds.
+   - (1%) The robot enters `PAUSE MODE` after this step.
+2. When `PAUSE MODE` is activated:
    - (10%)`GREEN` LED fades in and fades out at frequency of 1 Hz (equally allocate fade-in and fade-out time).
-   - (10%)Press the button to ***immediately*** switch to the **WORK MODE**.
-3. When **WORK MODE** is activated:
+   - (10%)Press the button to **immediately** switch to the `WORK MODE`.
+3. When `WORK MODE` is activated:
    - (4%) `GREEN` LED stays constantly on.
    - (6%) Press the button to ***immediately*** switch to the **PAUSE MODE**.
-4. Time **WORK MODE**.
-   - (15%) If the accumulated **WORK MODE** time exceeds 45 seconds, substitute `GREEN` LED with **`BLUE`** LED to simulate a low battery status.
-   - (5%) If accumulated **WORK MODE** time over 55 seconds, blink `RED` LED (`BLUE` LED keep working) at frequency of 10 Hz.
+4. Time `WORK MODE`.
+   - (15%) If the accumulated `WORK MODE` time exceeds 45 seconds, substitute `GREEN` LED with **`BLUE`** LED to simulate a low battery status.
+   - (5%) If accumulated `WORK MODE` time over 55 seconds, blink `RED` LED (`BLUE` LED keep working) at frequency of 10 Hz.
 5. (10%) Termination: **despite the mode**, trigger a [hard reset](https://docs.micropython.org/en/latest/wipy/tutorial/reset.html#reset-and-boot-modes) if `RED` LED blinked 5 seconds, or **press and hold**_ the button for 3 seconds . 
 
 > [!TIP]
@@ -46,13 +46,13 @@ Human-Robot Interface (HRI) is widely used allowing humans to easily interact wi
 > - Mode switching is NOT a one-time function. Make sure you can switch between the modes back and forth.
 > - The `BLUE` LED and the `RED` LED are suppose to functional in both **WORK MODE** and **PAUSE MODE**
 
-### 3 (10%) Documentation
+### 3 (20%) Documentation
 **It is important to get an engineering project well documented.** 
 Complete the [Documentation](#documentation-student-work-) section below. 
 1. Illustrate circuit design
-   - (4%) Upload a circuit sketch (breadboard is optional) to this repository  and display it in the [Circuit Diagram](#circuit-diagram) section.
-   - (4%) Upload a picture to this repository to illustrate your physical setup. Display it in the [Wiring Picture](#wiring-picture) section.
-2. (2%) Briefly (within 80 words) propose a nice-to-have feature for this HRI with consideration of **safety**.
+   - (8%) Upload a circuit sketch (breadboard is optional) to this repository  and display it in the [Circuit Diagram](#circuit-diagram) section.
+   - (8%) Upload a picture to this repository to illustrate your physical setup. Display it in the [Wiring Picture](#wiring-picture) section.
+2. (4%) Briefly (within 80 words) propose a nice-to-have feature for this HRI with consideration of **safety**.
    - You can add/remove LEDs and buttons, but no other items are allowed.
    - Briefly state why this feature will bring more safety to the hardware/user/public/environment/economy/etc..
 
