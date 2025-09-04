@@ -35,7 +35,7 @@ Human-Robot Interface (HRI) is widely used allowing humans to easily interact wi
    - (4%) `GREEN` LED stays constantly on.
    - (6%) Press the button to ***immediately*** switch to the **PAUSE MODE**.
 4. Time `WORK MODE`.
-   - (15%) If the accumulated `WORK MODE` time exceeds 45 seconds, substitute `GREEN` LED with **`BLUE`** LED to simulate a low battery status.
+   - (15%) If the accumulated `WORK MODE` time exceeds 45 seconds, substitute `GREEN` LED with **`BLUE`** LED in both modes (low-battery simulation).
    - (5%) If accumulated `WORK MODE` time over 55 seconds, blink `RED` LED (`BLUE` LED keep working) at frequency of 10 Hz.
 5. (10%) Termination: **despite the mode**, trigger a [hard reset](https://docs.micropython.org/en/latest/wipy/tutorial/reset.html#reset-and-boot-modes) if `RED` LED blinked 5 seconds, or **press and hold**_ the button for 3 seconds . 
 
