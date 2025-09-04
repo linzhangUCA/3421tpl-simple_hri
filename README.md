@@ -14,33 +14,39 @@ Human-Robot Interface (HRI) is widely used allowing humans to easily interact wi
 > [!TIP]
 > - Search online if any concepts are confused.
 > - Scavenge in classroom if any parts are needed.
+> - Debouncing and RGB LED are optional.
 
 > [!IMPORTANT]
 > Redeem the credits by uploading images and display them in [Documentation](#circuit-design) below.
 
-### (85%) 2 Coding
-Program the Raspberry Pi Pico to: 
-    - Indicate the robot's status using LEDs.
-    - Switch the robot's working modes using the button.
-> Upload your script to this repository.
+### 2 (65%) Coding
+- Program the Raspberry Pi Pico to: 
+    - Encode robot's status into colors (`GREEN`, `BLUE`, `RED`) using LEDs .
+    - Switch robot's behavior between **WORK MODE** and **PAUSE MODE** using a button.
 
-- The robot has 2 modes: **WORK MODE, PAUSE MODE**.
-- Use the tactile button to switch among the modes.
-- Use 3 LEDs (`GREEN`, `YELLOW`, `RED`) to indicate the robot's status.
+- Tasks:
+1. Initialization (System Check): blink all the LEDs at the same time if the button's GPIO pin is receiving correct default signal level (`0` for `PULL_DOWN`, `1` for `PULL_UP`).
+   - (4%) Blink LEDs with frequency of 5 Hz, lasting 2 seconds.
+   - (1%) The robot enters **PAUSE MODE** after this step.
+2. When **PAUSE MODE** is activated:
+   - (10%)`GREEN` LED fades in and fades out at frequency of 1 Hz (equally allocate fade-in and fade-out time).
+   - (10%)Press the button to ***immediately*** switch to the **WORK MODE**.
+3. When **WORK MODE** is activated:
+   - (4%) `GREEN` LED stays constantly on.
+   - (6%)Press the button to ***immediately*** switch to the **PAUSE MODE**.
+4. Time **WORK MODE**.
+   - (15%) If the accumulated **WORK MODE** time exceeds 45 seconds, substitute `GREEN` LED with **`BLUE`** LED to simulate a low battery status.
+   - (5%) If accumulated **WORK MODE** time over 55 seconds, blink `RED` LED (`BLUE` LED keep working) at frequency of 10 Hz.
+5. (10%) Termination: **despite the mode**, trigger a [hard reset](https://docs.micropython.org/en/latest/wipy/tutorial/reset.html#reset-and-boot-modes) if `RED` LED blinked 5 seconds, or **press and hold**_ the button for 3 seconds . 
 
-Refer to the following steps to code:
-1. (10%) Initialization (_hint: one-time_): blink all the LEDs at the same time with frequency of 5 Hz, last 2 seconds. Then the robot enters **PAUSE MODE**.
-2. (20%) When **PAUSE MODE** is activated: `GREEN` LED fades in and fades out at frequency of 1 Hz. Press the button to ***immediately*** switch to the **WORK MODE**.
-3. (20%) When **WORK MODE** is activated: `GREEN` LED stays constantly on. Press the button to switch back to the **PAUSE MODE**.
-4. (20%) Time **WORK MODE**. If the accumulated **WORK MODE** time exceeds 45 seconds, turn on `YELLOW` LED. If accumulated **WORK MODE** time over 55 seconds, blink `RED` LED at frequency of 10 Hz.
-5. (15%) Termination: turn off everything (_hint: break the endless loop_) if `RED` LED blinked 5 seconds, or **press and hold**_ the button for 3 seconds. 
+> [!TIP]
+> - `print()` function and Python Shell are awesome.
 
-**NOTE**: 
-- Mode switching is NOT a one-time function. Make sure you can switch between the modes back and forth.
-- The `YELLOW` LED and the `RED` LED are suppose to functional in both **WORK MODE** and **PAUSE MODE**
-- Once the system is shutdown (terminated), LEDs should not be able to turned back on any more. And pressing the button will no longer cause any consequences.
+> [!NOTE]
+> - Mode switching is NOT a one-time function. Make sure you can switch between the modes back and forth.
+> - The `BLUE` LED and the `RED` LED are suppose to functional in both **WORK MODE** and **PAUSE MODE**
 
-### (15%) Documentation
+### 3 (15%) Documentation
 **It is important to guide other people with a good documents.** Complete the following sections in this README. Please refer to [Github formatting guide](https://docs.github.com/en/get-started/writing-on-github) to get familiar with Markdown formatting.
 1. (5%) Hardware Table: list the names, descriptions and quantities of physical components used in this project.
 2. (5%) Wiring Diagram: attach a drawing to illustrate components connection.
