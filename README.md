@@ -56,8 +56,8 @@ Complete the [Documentation](#documentation-student-work-) section below.
    - (7%) Upload a circuit sketch (breadboard is optional) to this repository  and display it in the [Circuit Diagram](#circuit-diagram) section.
    - (7%) Upload a picture to this repository to illustrate your physical setup. Display it in the [Wiring Picture](#wiring-picture) section.
 2. (4%) Briefly explain how your debouncing circuit works using **math** language.   
-3. (2%) Briefly (within 80 words) propose a nice-to-have feature for this HRI with consideration of **safety**.
-   State why this feature will the robot safer to the hardware/user/public/environment/etc..
+3. (2%) (Within 80 words) Briefly propose a nice-to-have feature for an HRI with consideration of **safety**.
+   State why this feature will make the robot safer to the hardware/user/public/environment/etc..
 
 > [!TIP]
 > Please refer to [Github formatting guide](https://docs.github.com/en/get-started/writing-on-github).
