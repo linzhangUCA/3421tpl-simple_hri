@@ -22,8 +22,8 @@ Human-Robot Interface (HRI) is widely used allowing humans to easily interact wi
 - Program the Raspberry Pi Pico to: 
     - Encode robot's status into colors (`RED`, `GREEN`, `BLUE`) using LEDs .
     - Switch robot's behavior between `WORK MODE` and `PAUSE MODE` using a button.
-
-- Tasks:
+- Upload your script to this repository.
+- Complete following tasks:
 1. Initialization (System Check): blink all the LEDs at the same time if the button's GPIO pin is receiving correct default signal (`0` for `PULL_DOWN`, `1` for `PULL_UP`).
    - (4%) Blink all LEDs with frequency of 5 Hz, lasting 2 seconds.
    - (1%) The robot enters `PAUSE MODE` after this step.
